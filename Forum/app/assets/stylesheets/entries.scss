@@ -1,0 +1,78 @@
+// Place all the styles related to the entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#header {
+  // height: 80%;
+  // margin-top: 0;
+  // padding-top: 0px;
+  background-color: #47008F;
+  border-bottom: grey solid 5px;
+}
+#headerTitle {
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // padding: 20px;
+  // margin-top: 50px;
+  // background-color: pink;
+}
+#backHome {
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+}
+#titleLink {
+  color: grey;
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+#entryDiv {
+  padding-left: 10px;
+  padding-top: 30px;
+  height: 100px;
+}
+.stripe1 {
+  background-color: #DAC1F3;
+
+}
+.stripe2 {
+  background-color: #EDD1FF;
+
+}
+.links {
+  padding-left: 5px;
+  color: grey;
+  text-decoration: none;
+  font-family: helvetica;
+}
+#showTitle {
+  color: grey;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1.5em;
+}
+#contentP {
+  color: black;
+  font-family: helvetica;
+  font-size: 1em;
+}
+#timeStamp {
+  color: grey;
+  font-family: helvetica;
+  font-size: .5em;
+  font-style: italic;
+}
+.labels {
+  color: grey;
+  font-family: helvetica;
+  font-size: 1em;
+  font-weight: bold;
+}
+.errors{
+  color: red;
+  font-family: helvetica;
+  font-size: .75em;
+  font-weight: bold;
+  font-style: italic;
+}

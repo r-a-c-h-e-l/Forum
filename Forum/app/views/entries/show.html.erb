@@ -1,0 +1,7 @@
+<%= render "layouts/header"%>
+<p id="showTitle"><%=@entry.title%><p>
+<p id= "contentP"> <%=@entry.content%> </p>
+<p id="timeStamp"> Created at: <%=@entry.created_at.localtime.strftime("%b %d, %Y - %l:%M %P")%> | Updated at: <%=@entry.updated_at.localtime.strftime("%b %d, %Y - %l:%M %P")%></p>
+<br>
+<br>
+<%= link_to "Edit", edit_entry_path(@entry), class: "links"%>  |<%= link_to "Delete", entry_path(@entry), method: :delete, class: "links"%>

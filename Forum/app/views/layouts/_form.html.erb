@@ -1,0 +1,19 @@
+  <%= form_for @entry, url:{action: 'create'} do |f|%>
+    <%= f.label  "Title:", class: "labels"%>
+    <br>
+    <%= f.text_field :title%>
+    <% if @entry.errors.full_messages_for(:title).length > 0 %>
+      <p class= "errors"><%=@entry.errors.full_messages_for(:title)[0]%></p>
+    <%end%>
+    <br>
+    <br>
+    <%= f.label "Content:", class: "labels"%>
+    <br>
+    <%= f.text_area :content%>
+    <% if @entry.errors.full_messages_for(:content).length > 0 %>
+      <p class= "errors"><%=@entry.errors.full_messages_for(:content)[0]%></p>
+    <%end%>
+    <br>
+    <br>
+    <%=f.submit%>
+  <% end %>

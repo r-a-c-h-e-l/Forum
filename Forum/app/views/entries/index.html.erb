@@ -1,0 +1,18 @@
+<%= render "layouts/header"%>
+<div id="entries">
+  <% @entries.each do |entry| %>
+    <% if entry.id.modulo(2) == 0 %>
+      <div id="entryDiv" class= "stripe1">
+        <h2><%= link_to entry.title, entry_path(entry), id: "titleLink" %></h2>
+        <!-- <p> <%=entry.content%> </p> -->
+      </div>
+    <% else %>
+      <div id="entryDiv" class="stripe2">
+        <h2><%= link_to entry.title, entry_path(entry), id: "titleLink" %></h2>
+        <!-- <p> <%=entry.content%> </p> -->
+      </div>
+    <%end%>
+  <%end%>
+</div>
+
+<h2><%=link_to "Create an Entry", new_entry_path, class: "links" %></h2>
